@@ -6,4 +6,7 @@ export default defineConfig({
 
   plugins: [react()],
   base: './', // Change this to your deployment path
+  build: {
+    outDir: 'docs' // Change this to your desired output directory
+  }
 })
