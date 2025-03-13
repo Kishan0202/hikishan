@@ -1,7 +1,36 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+    --font-syne: 'Syne', sans-serif;
+    --animate-move-up: moveUp 1s ease-in-out;
+
+    @keyframes moveUp {
+        0% {
+            opacity: 1;
+            transform: translateX(0px) translateY(0px) scale(1);
+        }
+
+        25% {
+            opacity: 0;
+            transform: translateX(10px) translateY(-10px) scale(0.9);
+        }
+
+        26% {
+            opacity: 0;
+            transform: translateX(-10px) translateY(10px) scale(0.9);
+        }
+
+        55% {
+            opacity: 1;
+            transform: translateX(0px) translateY(0px) scale(1);
+        }
+    }
+}
 
 body {
-    @apply font-syne
+    font-family: var(--font-syne);
+}
+
+.animate-move-up {
+    animation: var(--animate-move-up);
 }
