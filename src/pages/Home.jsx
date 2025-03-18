@@ -7,6 +7,7 @@ import Herosection from '../components/home_page/Herosection';
 import Services from '../components/home_page/Services';
 import Introduction from '../components/home_page/Introduction';
 import Resume from '../components/home_page/Resume';
+import Portfolio from '../components/home_page/Portfolio';
 
 const Home = () => {
     useEffect(() => {
@@ -30,6 +31,9 @@ const Home = () => {
 
                 {/* RESUME SECTION */}
                 <Resume />
+
+                {/* PORTFOLIO SECTION */}
+                <Portfolio />
             </main>
             <Footer></Footer>
         </>
