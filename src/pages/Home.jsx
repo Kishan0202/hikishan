@@ -8,6 +8,7 @@ import Services from '../components/home_page/Services';
 import Introduction from '../components/home_page/Introduction';
 import Resume from '../components/home_page/Resume';
 import Portfolio from '../components/home_page/Portfolio';
+import Testimonial from '../components/home_page/Testimonial';
 
 const Home = () => {
     useEffect(() => {
@@ -34,6 +35,9 @@ const Home = () => {
 
                 {/* PORTFOLIO SECTION */}
                 <Portfolio />
+
+                {/* TESTIMONIAL SECTION */}
+                <Testimonial />
             </main>
             <Footer></Footer>
         </>
